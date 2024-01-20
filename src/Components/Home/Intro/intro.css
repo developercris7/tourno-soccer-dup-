@@ -1,0 +1,22 @@
+.intro-container{
+    width : 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    /* background-color: skyblue; */
+    background-image: url('https://media.istockphoto.com/id/1296899003/photo/one-caucasian-soccer-player-man-happy-celebration-in-soccer-stadium.webp?b=1&s=170667a&w=0&k=20&c=yhjh-d3I_SJmf7ELbES-7AiFb6UlBnay_1oEh3Sk5Go=');
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
+}
+.intro-container::before{
+    width: 60px;
+    height: 50px;
+    background-color: black;
+}
+.intro-wrapper{
+    width: 100%;
+    height: 100%;
+    /* background-color: black;
+    opacity: 0.2; */
+}
