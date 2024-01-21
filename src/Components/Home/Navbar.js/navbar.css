@@ -1,7 +1,7 @@
 .navbar-container {
   width: 100%;
-  background-color: #6495ed;
   padding: 10px;
+  color: white;
 }
 .navbar-wrapper {
   width: 100%;
@@ -12,6 +12,7 @@
 nav {
   display: flex;
   font-size: 14px;
+  color: white;
 }
 .nav-link {
   margin: 0px 10px;
@@ -24,6 +25,10 @@ nav {
   outline: none;
   border-radius: 5px;
   padding: 2px 15px;
+  background-color: #D9A901;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
 }
 .menu-btn {
   background: transparent;
