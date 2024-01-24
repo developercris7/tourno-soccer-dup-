@@ -20,6 +20,10 @@ nav {
   font-size: 10px;
   font-weight: 600;
 }
+.nav-link :hover{
+   color:#D9A901;
+}
+
 .login-btn {
   border: none;
   outline: none;

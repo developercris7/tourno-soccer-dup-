@@ -1,6 +1,7 @@
 import React from "react";
 import "./intro.css";
-import Navbar from "../Navbar.js/Navbar";
+import Navbar from "../Navbar/Navbar";
+import {Link} from 'react-router-dom'
 const Intro = () => {
   return (
     <div className="intro-container">
@@ -8,7 +9,7 @@ const Intro = () => {
         <Navbar />
 
         <div className="welcome-container ">
-          <p className="welcome-text">Welcome to Tourno-Soccer!</p>
+          <p className="welcome-text">Welcome to <span>Tourno Soccer !</span></p>
           <p className="sub-text">
             Your Ultimate Destination for Local Football Tournaments!
           </p>
@@ -36,7 +37,6 @@ const Intro = () => {
             <div className="img-container mx-auto">
               <img
                 src="https://img.freepik.com/free-photo/young-caucasian-male-football-soccer-player-kicking-ball-goal-mixed-light-dark-wall-concept-healthy-lifestyle-professional-sport-hobby_155003-38568.jpg?size=626&ext=jpg&ga=GA1.1.1502020834.1705726197&semt=ais"
-                // src="https://img.freepik.com/free-photo/portrait-young-man-football-playing-motion-training-isolated-black-studio-background-kicking-ball_155003-46281.jpg?size=626&ext=jpg&ga=GA1.1.1502020834.1705726197&semt=ais"
                 alt="ball kick"
                 className="img-fluid w-100 h-100"
               />
@@ -51,7 +51,9 @@ const Intro = () => {
             memorable!
           </p>
 
-          <button className="getStart-btn mt-3 mt-md-0">Get Started</button>
+          <button className="getStart-btn mt-3 mt-md-0">
+            <Link to='/signup' className="text-decoration-none text-white">Get Started</Link>
+          </button>
         </div>
       </div>
     </div>

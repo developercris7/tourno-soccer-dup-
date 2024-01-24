@@ -20,6 +20,9 @@
     margin: 0;
     padding: 0;
 }
+.welcome-text > span{
+    color: #D9A901;
+}
 .sub-text{
     font-size: 25px;
     font-weight: 500;

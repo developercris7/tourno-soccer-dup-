@@ -1,0 +1,55 @@
+/*
+mobile - 767px less
+medium - 768px <= width <= 991px
+large - >= 992px
+*/
+
+.signup-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: yellow;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    width: 600px;
+    min-height: 400px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 14px;
+    
+  }
+  
+  .form-group {
+    margin: 4px 0px;
+  }
+  
+  .form-group > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    /* font-size: 14px; */
+    padding: 5px 10px;
+  }
+  .submit-btn {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    border-radius: 5px;
+    background-color: yellow;
+    padding: 5px 0px;
+  }
+  @media (width< 767px) {
+    .form-container {
+      width: 100%;
+      min-height: 100vh;
+      border-radius: 0;
+    }
+  }
+  
