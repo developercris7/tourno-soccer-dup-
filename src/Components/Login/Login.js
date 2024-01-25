@@ -42,7 +42,7 @@ const Login = () => {
                 </div>
               ))}
 
-            <a href="" className="text-decoration-none mt-3">Forgot password ? </a>
+            <a href="/" className="text-decoration-none mt-3">Forgot password ? </a>
 
               <button type="submit" className="submit-btn">Login</button>
             </form>
