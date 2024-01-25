@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./signup.css";
 import { Link } from "react-router-dom";
 const Signup = () => {
+  const [formData,setFormData] = useState({
+      Username:"",
+      Email:"",
+      Password:"",
+      City:""
+  })
+
+  const handleChange = (e) => {
+    // const obj = {formData[]:e.target.value}
+    //  setFormData({...formData,formData[e.target.name]:e.target.value})
+     const {name , value} = e.target;
+ setFormData({...formData,[name]:value})
+    // console.log(data)
+    console.log(formData)
+      
+  }
+
   const formFields = [
     {
       id: 1,
       type: "text",
-      name: "Full name",
+      name: "Username",
     },
     {
       id: 2,
@@ -49,6 +66,7 @@ const Signup = () => {
                   name={data.name}
                   placeholder={data.name} 
                   required
+                  onChange={handleChange}
                   />
                 </div>
               ))}

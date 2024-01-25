@@ -28,7 +28,9 @@ const Navbar = () => {
           <Link className="nav-link">Contact</Link>
         </nav>
 
-        <button className="login-btn">Login</button>
+        <button className="login-btn">
+          <Link to="/login" className="text-decoration-none text-white">Login</Link>
+        </button>
 
         <Offcanvas show={show}  onHide={handleClose} style={{ width: "90%" ,backgroundColor:"black",color:"white"}}>
           <Offcanvas.Header >
